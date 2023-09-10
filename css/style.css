@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* *COMMON CSS */
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+/* COMMON CSS END */
+
+/* *NAVBAR-1 START */
+nav{
+    text-align: center;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+    margin: 30px 0;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+nav ul li a::before{
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.257);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s;
+    border-radius: 10px 0 0 10px;
+}
+nav ul li:hover a::before{
+    
+    width: 50%;
+}
+nav ul a::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.257);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.4s;
+    border-radius: 0 10px 10px 0;
+}
+nav ul li:hover a::after{
+    width: 50%;
+}
+/* *NAVBAR-1 END */
+
+
+
+/* *NAVBAR-2 START */
+.navigation{
+    background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.nav2 a::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #97121a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 10px;
+    
+    border-radius: 0 10px 10px 0;
+}
+.nav2:hover a::before{
+    width: 100%;
+}
+.nav2 a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #97121a;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 10px 0 0 10px;
+}
+.nav2:hover a::after{
+    width: 100%;
+}
+
+/* *NAVBAR-2 END */
